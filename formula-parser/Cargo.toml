@@ -1,8 +1,10 @@
 [package]
 name = "formula-parser"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-magnus = "0.7.1"
-rb-sys = "0.9.117"
+magnus = { version = "0.7", features = ["embed"] }
+
+[build-dependencies]
+magnus = { version = "0.7", features = ["embed"] }
